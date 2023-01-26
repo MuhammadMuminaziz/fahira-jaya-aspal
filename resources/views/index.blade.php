@@ -55,6 +55,17 @@
     </section>
     {{-- End Content --}}
 
+    {{-- video --}}
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/X-uFeA0vo3A" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {{-- Services --}}
     <section id="services" class="py-5 mt-5">
         <div class="container mx-auto">
@@ -219,7 +230,7 @@
         <div id="semua">
           <div class="row justify-content-center">
             @foreach($allPhoto as $all)
-            <div class="col-lg-3 col-md-4 col-6 mb-2">
+            <div class="col-lg-3 col-md-4 mb-2">
               <a href="/img/gallery/{{ $all->name }}" data-lightbox="image-0" data-title="">
                 <img src="/img/gallery/{{ $all->name }}" alt="" class="img-fluid">
               </a>
@@ -231,7 +242,7 @@
         <div id="aspal">
           <div class="row justify-content-center">
             @foreach($aspalPhoto as $aspal)
-            <div class="col-lg-3 col-md-4 col-6 mb-2">
+            <div class="col-lg-3 col-md-4 mb-2">
               <a href="/img/gallery/{{ $aspal->name }}" data-lightbox="image-1" data-title="">
                 <img src="/img/gallery/{{ $aspal->name }}" alt="" class="img-fluid">
               </a>
@@ -243,7 +254,7 @@
         <div id="block">
           <div class="row justify-content-center">
             @foreach($blockPhoto as $block)
-            <div class="col-lg-3 col-md-4 col-6 mb-2">
+            <div class="col-lg-3 col-md-4 mb-2">
               <a href="/img/gallery/{{ $block->name }}" data-lightbox="image-2" data-title="">
                 <img src="/img/gallery/{{ $block->name }}" alt="" class="img-fluid">
               </a>
